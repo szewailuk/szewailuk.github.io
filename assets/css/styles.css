@@ -460,10 +460,16 @@ body>.wrap {
 .variable {
     /*margin-left: 60px;*/
     margin: 10px 60px;
+    opacity: 0;
     visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
 }
 
-.slick-initialized { visibility: visible; }
+.slick-initialized { 
+    visibility: visible;
+    opacity: 1;  
+}
 
 .variable img {
     max-height: 74vh;
