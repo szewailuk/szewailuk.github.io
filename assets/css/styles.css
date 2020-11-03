@@ -701,6 +701,8 @@ __Media Query
 
     .variable {
         margin: 0;
+        opacity: 1;
+        visibility: visible;
     }
 
     .variable img {
