@@ -24,8 +24,13 @@ jQuery(function($) {
         }
     });
 
-    function createSlick(){
-        $('.variable').not('.slick-initialized').slick({
+        
+    function createSlick() {
+        $('.variable').not('.slick-initialized').on('init', function(slick) {
+            console.log('fired!');
+            $('.variable').fadeIn(3000);
+        })
+        .slick({
             lazyLoad: 'progressive',
             dots: false,
             // infinite: false,
@@ -43,6 +48,26 @@ jQuery(function($) {
     }
     createSlick();
     $(window).on( 'resize', createSlick );
+
+    // function createSlick(){
+    //     $('.variable').not('.slick-initialized').slick({
+    //         lazyLoad: 'progressive',
+    //         dots: false,
+    //         // infinite: false,
+    //         variableWidth: true,
+    //         adaptiveHeight: true,
+    //         focusOnSelect: true,
+    //         swipeToSlide: true ,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 500,
+    //                 settings: "unslick"
+    //             }
+    //         ]
+    //     });
+    // }
+    // createSlick();
+    // $(window).on( 'resize', createSlick );
 
 });
 
