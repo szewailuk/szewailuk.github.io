@@ -460,7 +460,10 @@ body>.wrap {
 .variable {
     /*margin-left: 60px;*/
     margin: 10px 60px;
+    visibility: hidden;
 }
+
+.slick-initialized { visibility: visible; }
 
 .variable img {
     max-height: 74vh;
