@@ -36,7 +36,7 @@ jQuery(function($) {
             slideToShow:10,
             responsive: [
                 {
-                    breakpoint: 500,
+                    breakpoint: 750,
                     settings: "unslick"
                 }
             ]
