@@ -772,6 +772,9 @@ __Media Query
 }
 
 @media only screen and (max-width: 350px) {
+    .overlay-content {
+        top: 16%;
+    }
     .header {
         padding: 4em 3em 0em 3em;
     }
