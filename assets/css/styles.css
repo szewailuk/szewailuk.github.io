@@ -504,6 +504,10 @@ body>.wrap {
     /*max-height: 42vw;*/
 }
 
+.s04 img {
+    max-height: 41vw;
+}
+
 .s05 img {
     max-height: 40vw;
 }
