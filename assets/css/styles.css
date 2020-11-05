@@ -496,8 +496,34 @@ body>.wrap {
 }
 
 .s02 img {
-    max-height: 43vw;
+    max-height: 41vw;
 }
+
+.s03 img {
+    max-width: 91vw;
+    /*max-height: 42vw;*/
+}
+
+.s05 img {
+    max-height: 40vw;
+}
+
+.s06 img {
+    max-height: 45vw;
+}
+
+.s07 img {
+    max-height: 45vw;
+}
+
+.s08 img {
+    max-height: 44vw;
+}
+
+.s09 img {
+    max-height: 31vw;
+}
+
 
 
 /* __Overlay
@@ -627,58 +653,62 @@ body {
 __Media Query
 
 --------------------------------------------------------------------- */
-/*@media only screen and (max-width: 1850px) {
-    .variable img {
-        max-height: 530px;
+@media only screen and (max-width: 1850px) {
+    .s09 img {
+        max-height: 36vw;
+    }
+
+    .s03 img {
+        max-width: 92vw;
     }
 }
 
+
 @media only screen and (max-width: 1500px) {
-    .variable img {
-        max-height: 440px;
+    .s09 img {
+        max-height: 44vw;
+    }
+    .s03 img {
+        max-width: 90vw;
     }
 }
 
 
 @media only screen and (max-width: 1235px) {
-    .variable img {
-        max-height: 375px;
+    .s03 img {
+        max-width: 88vw;
+    }
+    .s06 img {
+        max-height: 43vw;
+    }
+
+    .s07 img {
+        max-height: 43vw;
+    }
+    .s08 img {
+        max-width: 90vw;
+    }
+    .s09 img {
+        max-height: 48vw;
     }
 }
-*/
+
 @media only screen and (max-width: 1050px) {
-  /*  .variable img {
-        max-width: 87vw;
-        max-height: 39vh;
-    }*/
-}
-
-@media only screen and (max-width: 950px) {
-  /*  .variable img {
+    .s03 img {
         max-width: 84vw;
-        max-height: 32vh;
-    }*/
-}
-
-@media only screen and (max-width: 750px) {
-  /*  .variable img {
-        max-height: 24vh;
-    }*/
-    /*.header {
-        padding: 4em 6em 1em 6em;
-    }*/
-    .navbar-toggler{
-        margin-right: 0.5em;
     }
-    .square-img img {
-        max-width: 78vw;
+    .s06 img {
+        max-height: 43vw;
     }
-    /*#info {
-        margin: 0em 6em;
-    }*/
+
+    .s07 img {
+        max-height: 41vw;
+    }
+
+    .s08 img {
+        max-width: 88vw;
+    }
 }
-
-
 
 @media only screen and (max-width: 750px) {
     .cycle-slideshow {
@@ -731,6 +761,9 @@ __Media Query
         /*max-width: 90vw;*/
         padding-left: 0;
         padding-bottom: 15px;
+    }
+    .navbar-toggler{
+        margin-right: 0.5em;
     }
 }
 
