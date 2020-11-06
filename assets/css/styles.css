@@ -612,15 +612,16 @@ body>.wrap {
     font-weight: 600;
 }
 .modal-body {
-    padding-top: 5em;
+    /*padding-top: 5em;*/
 }
 .pop {
     position: absolute;
     top: 16px;
     right: 10px;
-    color: rgba(255,255,255,.75) !important;
+    color: rgba(255,255,255,.5) !important;
     font-size: 35px;
     font-weight: 300;
+    mix-blend-mode: difference;
 }
 
 .modal-content {
