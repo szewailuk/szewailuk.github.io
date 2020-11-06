@@ -24,27 +24,36 @@ jQuery(function($) {
         }
     });
 
-    function createSlick(){
-        $('.variable').not('.slick-initialized').slick({
-            lazyLoad: 'progressive',
-            dots: false,
-            // infinite: false,
-            variableWidth: true,
-            adaptiveHeight: true,
-            focusOnSelect: true,
-            swipeToSlide: true ,
-            slideToShow:10,
-            responsive: [
-                {
-                    breakpoint: 750,
-                    settings: "unslick"
-                }
-            ]
-        });
-    }
-    createSlick();
-    $(window).on( 'resize', createSlick );
+    // function createSlick(){
+    //     $('.variable').not('.slick-initialized').slick({
+    //         lazyLoad: 'progressive',
+    //         dots: false,
+    //         // infinite: false,
+    //         variableWidth: true,
+    //         adaptiveHeight: true,
+    //         focusOnSelect: true,
+    //         swipeToSlide: true ,
+    //         slideToShow:10,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 750,
+    //                 settings: "unslick"
+    //             }
+    //         ]
+    //     });
+    // }
+    // createSlick();
+    // $(window).on( 'resize', createSlick );
 
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      freeScroll: true,
+      contain: true,
+      fullscreen: true,
+      pageDots: false,
+      watchCSS: true
+    });
 });
 
 

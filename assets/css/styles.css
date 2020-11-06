@@ -414,8 +414,11 @@ ul {
 ---------------------------------------------------------------- */
 
 img {
-    max-width: 100%;
-    height: auto;
+    padding-left: 15px;
+    max-width: 100vw;
+    max-height: 35vw;
+    /*height: auto;*/
+    /*width: 100vw;*/
 }
 
 /* __Wrap
@@ -609,6 +612,22 @@ body>.wrap {
 
 .contact {
     font-weight: 600;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.main-carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+@media screen and ( max-width: 750px ) {
+  /* disable Flickity for large devices */
+  .main-carousel:after {
+    content: '';
+  }
 }
 
 /* __Fade
