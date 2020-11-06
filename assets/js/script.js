@@ -33,7 +33,7 @@ jQuery(function($) {
             adaptiveHeight: true,
             focusOnSelect: true,
             // swipeToSlide: true ,
-            focusOnSelect: false,
+            focusOnSelect: true ,
             slideToShow:10,
             responsive: [
                 {
@@ -45,6 +45,34 @@ jQuery(function($) {
     }
     createSlick();
     $(window).on( 'resize', createSlick );
+
+    $(function() {
+        $('.pop').on('click', function() {
+            var width = $(window).width();  
+            if(width > 500) {
+                $('.imagepreview').attr('src', $(this).prevAll('img').attr('src'));
+                $('#imagemodal').modal('show');    
+            }
+        });     
+    });
+
+    // $('img').hover(function(){
+    //     $(this).siblings('.pop').css("visibility", "visible");
+    // });
+
+    // $(function() {
+    // $('img').hover(function () {
+    //     $(this).nextAll('pop').modal('show');
+    // });
+// });
+
+    function removeModal() {
+        var width = $(window).width();  
+        if(width < 500) {
+            $('#imagemodal').modal('hide');   
+        }
+    }
+    $(window).on( 'resize', removeModal );
 
 
     // $('img').on('click', function(e) {

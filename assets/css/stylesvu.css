@@ -480,7 +480,6 @@ body>.wrap {
 
 .slider_div {
     outline: none;
-    position: relative;
 }
 
 .slick-slide {
@@ -492,7 +491,7 @@ body>.wrap {
 }
 
 .s01 img {
-    max-height: 31vw;
+    max-height: 33vw;
     /*max-height: 45vw;*/
 }
 
@@ -611,37 +610,20 @@ body>.wrap {
 .contact {
     font-weight: 600;
 }
-.modal-body {
-    padding-top: 5em;
-}
-.pop {
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    color: rgba(255,255,255,.75) !important;
-    font-size: 35px;
-    font-weight: 300;
-}
 
-.modal-content {
-    background-color: transparent !important;
-    border: none !important;
-
+/*#imgViewer::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+}
+#imgViewer::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-.imagepreview {
-    max-height: 90vh;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.close {
-    text-shadow: none;
-    color: #d0d0d0 !important;
-    font-size: 50px;
-    font-weight: 300;
-
-}
+.modal-backdrop {
+     background-color: rgba(0,0,0,.0001) !important;
+}*/
 
 /* __Fade
 -------------------------------- */
@@ -826,12 +808,11 @@ __Media Query
 }
 
 
-@media (min-width: 576px) {
-    .modal-dialog {
+/*@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
         max-width: 90vw;
-        /*margin: 1.75rem auto;*/
     }
-}
+}*/
 
 /* ----- Maison Neue Extended  --------------------------------------------- */
 
