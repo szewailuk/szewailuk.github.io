@@ -32,7 +32,8 @@ jQuery(function($) {
             variableWidth: true,
             adaptiveHeight: true,
             focusOnSelect: true,
-            swipeToSlide: true ,
+            // swipeToSlide: true ,
+            focusOnSelect: false,
             slideToShow:10,
             responsive: [
                 {
@@ -44,6 +45,16 @@ jQuery(function($) {
     }
     createSlick();
     $(window).on( 'resize', createSlick );
+
+
+    // $('img').on('click', function(e) {
+    //   $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
+    //   $('#viewImg').modal('show')
+    // })
+
+    // $('img').each(function(i,e) {
+    //   $(e).wrap('<div class="img-wrapper"></div>')
+    // })
 
 });
 
