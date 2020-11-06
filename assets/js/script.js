@@ -60,11 +60,9 @@ jQuery(function($) {
     //     $(this).siblings('.pop').css("visibility", "visible");
     // });
 
-    // $(function() {
-    // $('img').hover(function () {
-    //     $(this).nextAll('pop').modal('show');
-    // });
-// });
+    $('img').bind('load', function() {
+      $(this).siblings('.pop').css("visibility", "visible");
+    });
 
     function removeModal() {
         var width = $(window).width();  

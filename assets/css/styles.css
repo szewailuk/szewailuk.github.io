@@ -643,6 +643,10 @@ body>.wrap {
 
 }
 
+.hidden {
+    visibility: none;
+}
+
 /* __Fade
 -------------------------------- */
 
